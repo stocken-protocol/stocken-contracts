@@ -3,7 +3,6 @@ pragma solidity ^0.8.17;
 
 import {ERC721A} from "erc721a/contracts/ERC721A.sol";
 import {AccessControl} from "@openzeppelin/contracts/access/AccessControl.sol";
-import {IAccessControl} from "@openzeppelin/contracts/access/IAccessControl.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
 /*
