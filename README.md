@@ -8,7 +8,7 @@
 
 |Name|Network|Contract address|
 |:---|:---|:---|
-|Stocken|Sepolia|[0xE01e092Aa0a083b1Ae0E10328B85AC712356D9A3](https://sepolia.etherscan.io/address/0xE01e092Aa0a083b1Ae0E10328B85AC712356D9A3#code)|
+|PhysicsNFT|AstarNetwork(Shibuya)|[0xfe224079232F5e4938D3F0750998Af57c9Eb6BcC](https://shibuya.subscan.io/account/0xfe224079232F5e4938D3F0750998Af57c9Eb6BcC)|
 
 ## 📡 License
 

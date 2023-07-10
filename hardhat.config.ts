@@ -4,7 +4,8 @@ import { config as dotenvConfig } from "dotenv";
 dotenvConfig();
 
 const privateKey = process.env.WALLET_PRIVATE_KEY as string
-const rpsUrlSepolia = process.env.RPC_URL_SEPOLIA as string
+const rpcUrlSepolia = process.env.RPC_URL_SEPOLIA as string
+const rpcUrlShibuya = process.env.RPC_URL_SHIBUYA as string
 const etherscanApiKey = process.env.ETHERSCAN_API_KEY as string
 
 const config: HardhatUserConfig = {
@@ -12,7 +13,11 @@ const config: HardhatUserConfig = {
   networks: {
     sepolia: {
       accounts: [privateKey],
-      url: rpsUrlSepolia,
+      url: rpcUrlSepolia,
+    },
+    shibuya: {
+      accounts: [privateKey],
+      url: rpcUrlShibuya
     }
   },
   etherscan: {

@@ -1,13 +1,17 @@
 import { ethers } from "hardhat";
+import { config as dotenvConfig } from "dotenv";
+dotenvConfig();
+
+const baseTokenURI = process.env.BASE_TOKEN_URL as string;
 
 async function main() {
-  const Stocken = await ethers.getContractFactory("Stocken");
-  const stocken = await Stocken.deploy();
+  const PhysicsNFT = await ethers.getContractFactory("PhysicsNFT");
+  const physicsNFT = await PhysicsNFT.deploy(baseTokenURI);
 
-  await stocken.deployed();
+  await physicsNFT.deployed();
 
   console.log(
-    `Deployed to ${stocken.address}`
+    `Deployed to ${physicsNFT.address}`
   );
 }
 
