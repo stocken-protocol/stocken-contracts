@@ -42,7 +42,6 @@ contract PhysicsNFT is ERC721A, AccessControl, Ownable {
         _;
     }
 
-
     modifier onlyBurner() {
         require(hasRole(MINTER_ROLE, msg.sender), "Minter: permission denied");
         _;
